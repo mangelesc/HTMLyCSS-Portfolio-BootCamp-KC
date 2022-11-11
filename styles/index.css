@@ -1,6 +1,3 @@
-.imgDesktop {
-    max-width: 100%;
-}
 .hola h1 {
     padding: 10px 0px;
 }
@@ -27,14 +24,16 @@
     background: #e2fadb;
     justify-content: flex-start;
     border-radius: 100px;
-    border: 1px;
-    border-color: black;
     align-items: center;
     position: relative;
     padding: 0 5px;
     display: flex;
     height: 25px;
     width: 250px;
+}
+
+.progress1 {
+    margin-bottom: 20px;
 }
 
 .progress-value {
@@ -104,4 +103,53 @@
 
 .val4 {
     animation: load4 3s normal forwards;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .skills {
+        margin: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .skills{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .progress {
+        height: 35px;
+        width: 250px;
+        margin-bottom: 40px;
+    }
+
+    .progress-value {
+        height: 25px;
+;
+    }
+    .progress1 {
+    margin-bottom: 30px;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+        .progress {
+        height: 35px;
+        width: 250px;
+    }
+
+    .progress-value {
+        height: 25px;
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
 }

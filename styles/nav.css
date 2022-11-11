@@ -169,3 +169,42 @@ p {
     min-width: 100px;
     padding: 1% 10%;
 }
+
+.imgDesktop {
+    max-width: 100%;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .divImg {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        padding: 40px 60px;
+    }
+
+    p {
+        font-size: 18pt;
+    }
+
+    .columns {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+}
