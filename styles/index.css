@@ -1,31 +1,107 @@
-@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
-
-* {
-    font-family: "Arvo", serif;
+.imgDesktop {
+    max-width: 100%;
 }
-.container {
-    margin: auto;
+.hola h1 {
+    padding: 10px 0px;
+}
+
+.hola p {
+    padding: 10px 0px;
+    text-align: justify;
+}
+
+#imgHola {
+    max-width: 70%;
+}
+
+.skills {
+    margin: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 25px;
-    width: 450px;
 }
 
-.separator {
-    display: flex;
+/*Barras de progreso*/
+.progress {
+    background: #e2fadb;
+    justify-content: flex-start;
+    border-radius: 100px;
+    border: 1px;
+    border-color: black;
     align-items: center;
-    width: 100%;
-    gap: 15px;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 25px;
+    width: 250px;
 }
 
-.separator hr {
-    flex-grow: 1;
-    border: none;
-    border-top: 1px solid #8b8b8b;
+.progress-value {
+    box-shadow: 0 10px 40px -10px rgb(0, 0, 0);
+    border-radius: 100px;
+    background: #9bc4cba6;
+    height: 15px;
+    width: 0;
 }
 
-.separator span {
-    color: #8b8b8b;
+@keyframes load1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 68%;
+    }
+}
+
+@keyframes load1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes load2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes load3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes load4 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+.val1 {
+    animation: load1 3s normal forwards;
+}
+
+.val2 {
+    animation: load2 3s normal forwards;
+}
+
+.val3 {
+    animation: load3 3s normal forwards;
+}
+
+.val4 {
+    animation: load4 3s normal forwards;
 }

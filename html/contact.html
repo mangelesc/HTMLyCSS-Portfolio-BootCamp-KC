@@ -6,8 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Contacto</title>
         <link rel="stylesheet" href="../styles/nav.css" />
+        <link rel="stylesheet" href="../styles/footer.css" />
         <link rel="stylesheet" href="../styles/contact.css" />
-        <script src="./JS/navbar.js" defer></script>
+        <script src="../JS/navbar.js" defer></script>
     </head>
     <body>
         <header class="navbar">
@@ -20,15 +21,26 @@
                 <nav class="nav" id="nav">
                     <ul>
                         <li>
-                            <a class="menu" href="index.html">Portfolio</a>
+                            <a class="menu" href="../index.html">Portfolio</a>
                         </li>
                         <li>
-                            <a class="menu" href="html/contact.html"
-                                >Contacto</a
+                            <a class="menu" href="contact.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a
+                                class="menu"
+                                href="https://github.com/mangelesc"
+                                target="_blank"
+                                >Github</a
                             >
                         </li>
                         <li>
-                            <a class="menu" href="index.html">Portfolio</a>
+                            <a
+                                class="menu"
+                                href="https://www.linkedin.com/in/mariaangelescordoba/"
+                                target="_blank"
+                                >LinkedIn</a
+                            >
                         </li>
                     </ul>
                 </nav>
@@ -36,50 +48,151 @@
             <div class="menu-bg" id="menu-bg"></div>
             <img class="logo" src="../imgs/logo.jpg" alt="Logo" />
         </header>
-        <main>
-            <div class="container">
-                <h3>Contacta conmigo:</h3>
 
-                <form action="" method="">
+
+
+        <main">
+            <div class="container">
+                <h2 class="tittle">Contacta conmigo:</h2>
+
+                <form action="./thanks.html" method="get">
                     <div class="section-inputs">
                         <label for="name">
-                            <span>Name </span>
+                            <span class="labelSpan">Nombre</span>
                             <input
+                                class="labelInput"
                                 id="name"
                                 name="name"
-                                placeholder="Ángeles C."
+                                placeholder="Nombre"
+                                type="text"
+                                required
                             />
                         </label>
-                        <label for="username">
-                            <span>Username </span>
+                        <label for="lastname">
+                            <span class="labelSpan">Apellidos</span>
                             <input
-                                id="username"
-                                name="username"
-                                placeholder="AngelesCG"
+                                class="labelInput"
+                                id="lastname"
+                                name="lastname"
+                                placeholder="Apellidos"
+                                type="text"
+                                required
                             />
                         </label>
                     </div>
                     <label for="email">
-                        <span>Email </span>
-                        <input id="email" name="email" />
+                        <span class="labelSpan">Email </span>
+                        <input 
+                        class="labelInput"
+                        id="email" 
+                        name="email" 
+                        placeholder="hola@angeles.com"
+                        type="email"/>
                     </label>
-                    <label for="password">
-                        <span>Password </span>
-                        <input
-                            id="password"
-                            name="password"
-                            placeholder="6+ characters"
+                    <label for="phone">
+                        <span class="labelSpan">Teléfono </span>
+                        <input class="labelInput"
+                            id="phone"
+                            name="phone"
+                            placeholder="Teléfono"
+                            type="tel"
+                            required
                         />
                     </label>
-                    <label for="checkbox" class="checkbox-label">
-                        <input type="checkbox" id="checkbox" />
-                        <span>Acepto las condiciones y el aviso legal</span>
+
+                    <label for="user">
+                        <span class="labelSpan">Github username</span>
+                        <input 
+                            class="labelInput" 
+                            id="comment" 
+                            placeholder="@user"
+                            type="text"
+                            pattern = "^@[a-zA-Z0-9_]{1,30}">
+                            
+                        </input>
                     </label>
-                    <button type="submit" class="submit-btn">
-                        Crear cuenta
-                    </button>
+
+                    <label for="comment">
+                        <span class="labelSpan">Mensaje</span>
+                        <textarea 
+                            class="labelInput" 
+                            id="comment" 
+                            placeholder="Escribe tu comentario aquí"
+                            type="text"
+                            maxlength="180"
+                            required>
+                        </textarea>
+                    </label>
+                    
+                    <label class="label">
+                        <span class="labelSpan">¿Cómo me conociste?</span>
+                            <div class="radioButton">
+                                <label for="uni">
+                                <input 
+                                    type="checkbox" 
+                                    name="uni" 
+                                    id="uni" 
+                                    value="uni" />
+                                Universidad</label>
+                            </div>
+                            <div class="radioButton">
+                                <label for="KeepCoding">
+                                <input
+                                    type="checkbox"
+                                    name="KeepCoding"
+                                    id="KeepCoding"
+                                    value="KeepCoding"
+                                /> KeepCoding</label>
+                            </div>
+                            <div class="radioButton">
+                                <label for="Colegio">
+                                    <input 
+                                    type="checkbox" 
+                                    name="Colegio" 
+                                    id="Colegio" 
+                                    value="Colegio" />    
+                                Colegio</label>
+                            </div>
+                            <div class="radioButton">
+                                <label for="Github">
+                                    <input 
+                                    type="checkbox" 
+                                    name="meet" 
+                                    id="Github" 
+                                    value="Github" />    
+                                En Github</label>
+                            </div>
+
+                    </label>
+
+                    <div class="divButton">       
+                        <button type="submit" class="submit-btn">
+                            Enviar
+                        </button>
+                    </div>
                 </form>
             </div>
+            <div class="container">
+                <img src="../imgs/laptop.jpg" alt="laptop">
+            </div>
         </main>
+
+        <footer class="footer">
+            <h6>Práctica HTML y CSS</h6>
+            <nav class="imgFooter">
+                <a
+                    href="https://www.linkedin.com/in/mariaangelescordoba"
+                    target="_blank"
+                >
+                    <img class="RRSS" src="../imgs/linkedin.png" />
+                </a>
+                <a href="https://github.com/mangelesc" target="_blank">
+                    <img class="RRSS" src="../imgs/github.png" />
+                </a>
+                <a href="https://www.whatsapp.com/" target="_blank">
+                    <img class="RRSS" src="../imgs/whatsapp.png" />
+                </a>
+            </nav>
+        </footer>
     </body>
 </html>
